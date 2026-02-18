@@ -1,0 +1,101 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* Image CSS */
+
+.backgroundImg {
+    width: 100%;
+    --night: 0;
+}
+
+.backgroundImg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: opacity 0.2s linear;
+}
+
+.backgroundImg .backgroundDay {
+    opacity: calc(1 - var(--night));
+}
+
+.backgroundImg .backgroundNight {
+    opacity: var(--night);
+}
+
+/* Nav Menu CSS */
+
+.navMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1% 7%;
+    align-items: center;
+    position: relative;
+}
+
+.navMenuLeft span {
+    font-size: xx-large;
+}
+
+.navMenuRight span {
+    font-size: medium;
+    margin-right: 10px;
+}
+
+.navMenuRight span a {
+    text-decoration: none;
+    color: black;
+}
+
+.navMenuRight span:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+/* Slider CSS */
+
+.dayAndNightSlider {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Night Mode CSS */
+
+body.nightMode {
+
+    .navMenuLeft span {
+        color: white;
+    }
+
+    .navMenuRight span:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .navMenuRight span a {
+        color: white;
+    }
+
+    .dayAndNightSlider {
+        .sliderDay,
+        .sliderNight {
+            color: white;
+        }
+    }
+
+}

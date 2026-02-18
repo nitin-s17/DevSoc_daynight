@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day and Night Theme</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="mainBody">
+        <div class="backgroundImg">
+            <img src="img/unsw-day.png" class="backgroundDay" alt="UNSW Day Image">
+            <div class="nightImgWrapper">
+                <img src="img/unsw-night.png" class="backgroundNight" alt="UNSW Night Image">
+            </div>
+        </div>
+        <div class="navMenu">
+            <div class="navMenuLeft">
+                <span><Strong>NSN</Strong></span>
+            </div>
+            <div class="navMenuRight">
+                <span>
+                    <a href="#">
+                        Locations
+                    </a>
+                </span>
+                <span>
+                    <a href="#">
+                        Pricings
+                    </a>
+                </span>
+                <span>
+                    <a href="#">
+                        About Us
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        <div class="dayAndNightSlider">
+            <label for="toggleDay">
+                <span class="sliderDay">Day</span>
+            </label>
+            <input type="range" class="dayNightSlider" value="0">
+            <label for="toggleNight">
+                <span class="sliderNight">Night</span>
+            </label>
+        </div>
+
+    </div>
+</body>
+</html>
